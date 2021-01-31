@@ -576,7 +576,7 @@ void GrooveboxWindow::UpdateModulationSourceHasParamLock(ModulationSourceButtonW
 
     for (auto dial : m_dials)
     {
-        if (dial->GetParam(modulatonSource.GetModulationSource(m_currentTrack).GetModulations()) != 0)
+        if (!dial->IsSimpleDial() && dial->GetParam(modulatonSource.GetModulationSource(m_currentTrack).GetModulations()) != 0)
         {
             hasOverride = true;
             break;

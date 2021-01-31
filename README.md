@@ -33,9 +33,8 @@ At the top of the screen are buttons to access the different pages. Each page pr
 - Load Sound: Lets you load a sound to the current track. Currently you have
   to enter the name of an existing sound that's been saved to the Groovebox\Sounds directory.
 
+On the right side of the screen are buttons to select modulation sources. When one of these is selected, you can right click and drag on a dial to adjust the modulation amount from that source. You can middle click on the dial to remove the modulation.
 
-On the right side of the screen are buttons to select modulation sources. When one of these is selected, you can right click and drag on a dial to adjust the modulation amount from that source.
-
-On the button of the screen are the step toggles. These show which steps are active and will trigger to produce sound. Clicking on a toggle will turn it on or off. Right clicking will select a step without toggling it. Holding shift and sight clicking, you can select several steps at once. When a step is selected, you can right click and drag on a dial to change the value of that dial for the selected steps only.
+On the button of the screen are the step toggles. These show which steps are active and will trigger to produce sound. Clicking on a toggle will turn it on or off. Right clicking will select a step without toggling it. Holding shift and sight clicking, you can select several steps at once. When a step is selected, you can right click and drag on a dial to change the value of that dial for the selected steps only. You can middle click on the dial to remove the per-step value.
 
 Not pictured, you can press 1-8 to select which track you're editing. Each track has a different sound and a different pattern.
