@@ -1,0 +1,5 @@
+PARAM(Attack, Attack, 0, 100, 0, 0.0, 2.0)
+PARAM(Decay, Decay, 0, 100, 8, 0.0, 2.0)
+PARAM(Sustain, Sustain, 0, 100, 32, 0.0, 1.0)
+PARAM(Release, Release, 0, 100, 4, 0.0, 2.0)
+PARAM(Amount, Amount, 0, 100, 100, 0.0, 1.0)

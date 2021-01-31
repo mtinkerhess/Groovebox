@@ -1,0 +1,8 @@
+PARAM(Send, Send, 0, 100, 100, 0.0, 1.0)
+PARAM(Feedback, Feedback, 0, 100, 0, 0.0, 1.0)
+PARAM(WetLevel, Wet, 0, 100, 0, 0.0, 1.0)
+PARAM(DryLevel, Dry, 0, 100, 100, 0.0, 1.0)
+PARAM(TapeSpeed, Speed, 0, 100, 10, 0.0, 10.0)
+PARAM(HeadDistance, Distance, 0, 100, 100, 0.0, 1.0)
+PARAM(Pan, Pan, -100, 100, 0, -1.0, 1.0)
+PARAM(PingPong, PingPong, 0, 1, 0, 0, 1)

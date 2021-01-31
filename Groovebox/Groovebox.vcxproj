@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{fecab138-6fe6-444a-a241-4a0d8e58544c}</ProjectGuid>
+    <RootNamespace>SfmlTest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Groovebox</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)..\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ShowIncludes>false</ShowIncludes>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-audio-s-d.lib;sfml-network-s-d.lib;sfml-system-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(SolutionDir)..\SFML-2.5.1\bin\openal32.dll $(TargetDir)
+rem xcopy /Y /E $(SolutionDir)Resources $(TargetDir)Resources\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)..\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ShowIncludes>false</ShowIncludes>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-audio-s.lib;sfml-network-s.lib;sfml-system-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(SolutionDir)..\SFML-2.5.1\bin\openal32.dll $(TargetDir)
+rem xcopy /Y /E $(SolutionDir)Resources $(TargetDir)Resources\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)..\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ShowIncludes>false</ShowIncludes>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-audio-s-d.lib;sfml-network-s-d.lib;sfml-system-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(SolutionDir)..\SFML-2.5.1\bin\openal32.dll $(TargetDir)
+rem xcopy /Y /E $(SolutionDir)Resources $(TargetDir)Resources\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)..\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ShowIncludes>false</ShowIncludes>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-audio-s.lib;sfml-network-s.lib;sfml-system-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(SolutionDir)..\SFML-2.5.1\bin\openal32.dll $(TargetDir)
+rem xcopy /Y /E $(SolutionDir)Resources $(TargetDir)Resources\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Disk.cpp" />
+    <ClCompile Include="Source\Input\InputSystem.cpp" />
+    <ClCompile Include="Source\GrooveboxWindow\GrooveboxWindow.cpp" />
+    <ClCompile Include="Source\ModulationSource.cpp" />
+    <ClCompile Include="Source\Voice\SynthParamConstants.cpp" />
+    <ClCompile Include="Source\UI\ButtonWidget.cpp" />
+    <ClCompile Include="Source\UI\ImageWidget.cpp" />
+    <ClCompile Include="Source\UI\LabelWidget.cpp" />
+    <ClCompile Include="Source\UI\LayoutWidget.cpp" />
+    <ClCompile Include="Source\UI\ModalDialogWidget.cpp" />
+    <ClCompile Include="Source\UI\ModulationSourceButtonWidget.cpp" />
+    <ClCompile Include="Source\UI\SelectableButtonWidget.cpp" />
+    <ClCompile Include="Source\UI\SequencerToggleWidget.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\Voice\Oscillator.cpp" />
+    <ClCompile Include="Source\ResourceMap.cpp" />
+    <ClCompile Include="Source\SequenceProcessor.cpp" />
+    <ClCompile Include="Source\UI\TextInputWidget.cpp" />
+    <ClCompile Include="Source\UI\Widget.cpp" />
+    <ClCompile Include="Source\Voice\SynthParamReflection.cpp" />
+    <ClCompile Include="Source\Voice\SynthVoiceModule.cpp" />
+    <ClCompile Include="Source\Util.cpp" />
+    <ClCompile Include="Source\UI\DialWidget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Disk.h" />
+    <ClInclude Include="Source\Input\InputSystem.h" />
+    <ClInclude Include="Source\Biquad.h" />
+    <ClInclude Include="Source\Constants.h" />
+    <ClInclude Include="Source\EventTypes.h" />
+    <ClInclude Include="Source\MacroHelpers.h" />
+    <ClInclude Include="Source\Modules\AmpModule.h" />
+    <ClInclude Include="Source\Modules\BackingObjectModule.h" />
+    <ClInclude Include="Source\Modules\BiquadFilterModule.h" />
+    <ClInclude Include="Source\Modules\LfoModule.h" />
+    <ClInclude Include="Source\Modules\StereoSignalModule.h" />
+    <ClInclude Include="Source\Modules\TapeDelayModule.h" />
+    <ClInclude Include="Source\Modules\MixerModule.h" />
+    <ClInclude Include="Source\Modules\SwitchableFilterModule.h" />
+    <ClInclude Include="Source\Modules\SwitchableModule.h" />
+    <ClInclude Include="Source\UI\Menu\MenuBarWidget.h" />
+    <ClInclude Include="Source\Voice\Macros\DelayParamMacros.h" />
+    <ClInclude Include="Source\Voice\Macros\EnvelopeParamMacros.h" />
+    <ClInclude Include="Source\Voice\Macros\FilterParamMacros.h" />
+    <ClInclude Include="Source\Voice\Macros\LfoParamMacros.h" />
+    <ClInclude Include="Source\Voice\Macros\OscillatorParamMacros.h" />
+    <ClInclude Include="Source\Voice\Macros\SynthVoiceCategoryInstanceMacros.h" />
+    <ClInclude Include="Source\Voice\Macros\SynthVoiceCategoryMacros.h" />
+    <ClInclude Include="Source\Voice\SynthParamConstants.h" />
+    <ClInclude Include="Source\ModulationSource.h" />
+    <ClInclude Include="Source\Modules\SignalModule.h" />
+    <ClInclude Include="Source\Voice\Envelope.h" />
+    <ClInclude Include="Source\Fonts.h" />
+    <ClInclude Include="Source\GrooveboxWindow\GrooveboxWindow.h" />
+    <ClInclude Include="Source\Lfo.h" />
+    <ClInclude Include="Source\MyMath.h" />
+    <ClInclude Include="Source\MulticastDelegate.h" />
+    <ClInclude Include="Source\Voice\Oscillator.h" />
+    <ClInclude Include="Source\Sequence.h" />
+    <ClInclude Include="Source\SequenceProcessor.h" />
+    <ClInclude Include="Source\SequencerStream.h" />
+    <ClInclude Include="Source\ResourceMap.h" />
+    <ClInclude Include="Source\Voice\Macros\SynthParamMacros.h" />
+    <ClInclude Include="Source\UI\ButtonWidget.h" />
+    <ClInclude Include="Source\UI\DialWidget.h" />
+    <ClInclude Include="Source\UI\ImageWidget.h" />
+    <ClInclude Include="Source\UI\LabelWidget.h" />
+    <ClInclude Include="Source\UI\LayoutWidget.h" />
+    <ClInclude Include="Source\UI\ModalDialogWidget.h" />
+    <ClInclude Include="Source\UI\ModulationSourceButtonWidget.h" />
+    <ClInclude Include="Source\UI\SelectableButtonWidget.h" />
+    <ClInclude Include="Source\UI\SequencerToggleWidget.h" />
+    <ClInclude Include="Source\UI\TabbedPanelWidget.h" />
+    <ClInclude Include="Source\UI\TextInputWidget.h" />
+    <ClInclude Include="Source\Voice\SynthParamGetters.h" />
+    <ClInclude Include="Source\Voice\SynthParamReflection.h" />
+    <ClInclude Include="Source\Voice\SynthVoiceOptionalParam.h" />
+    <ClInclude Include="Source\Voice\SynthVoiceValueParams.h" />
+    <ClInclude Include="Source\Voice\SynthVoiceModule.h" />
+    <ClInclude Include="Source\Util.h" />
+    <ClInclude Include="Source\Voice\SynthVoiceParam.h" />
+    <ClInclude Include="Source\UI\Widget.h" />
+    <ClInclude Include="Source\Voice\Templates\ReflectionCategoryTemplate.h" />
+    <ClInclude Include="Source\Voice\Templates\ValueParamsTypeTemplate.h" />
+    <ClInclude Include="Source\Voice\TSynthVoiceParams.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Textures\Button.png" />
+    <Image Include="Resources\Textures\Button_Hovered.png" />
+    <Image Include="Resources\Textures\Button_Pressed.png" />
+    <Image Include="Resources\Textures\Pip_Off.png" />
+    <Image Include="Resources\Textures\Pip_On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Config\Fonts.txt" />
+    <Text Include="Resources\Config\Textures.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

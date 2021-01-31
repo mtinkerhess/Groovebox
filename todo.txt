@@ -1,0 +1,56 @@
+TODO
+
+P1
+
+Save voices to file (done?)
+
+List voices to load, click to load (scroll panel)
+
+Save patterns / projects to file
+
+List patterns / projects to load, click to load (scroll panel)
+
+Label filter modes under knob
+
+P2
+
+Implement LFOs (done?)
+
+Multiple tracks (8?) (Done?)
+
+Checkbox instead of dial for 0-1 binary params (like osc reset)
+
+Double click to reset knob to default
+
+P3
+
+Add trigless locks
+
+Add slide
+
+FM - exponential / phase
+
+Patterns more than 16 steps
+
+Drive (before filter? In amp?)
+
+Reverb + delay sends
+
+Per voice effects
+
+Master compressor (multiband?)
+
+Key tracking as mod source
+
+P4
+
+Arrangement mode
+
+Export wavs - per track and also master
+
+Multi-oscillators w/ detune / spread (maybe reduce oversampling when doing this?)
+
+Melodic step sequencer view
+
+Polyphony (like Octatrack)
+

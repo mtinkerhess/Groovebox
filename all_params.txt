@@ -1,0 +1,57 @@
+All params:
+
+per osc:
+pitch - semitones
+fine - cents
+level - 0-1
+type - sin, tri, square, saw, noise
+shape - linear vs. exp, noise color?
+pulse - stretch middle to front / back
+glide curve
+glide time
+detune count
+detune amount
+detune amount movement
+detune spread
+detune spread movement
+FM type - exponential, phase (through zero)
+FM feedback
+
+per other osc:
+FM amount
+AM amount
+sync amount
+
+amp:
+level
+
+per envelope:
+attack
+hold
+decay
+sustain release
+attack shape - log, linear, exp
+decay shape
+release shape
+restart from 0
+delay
+loop count - 1, 2, ..., inf
+
+per envelope destination:
+destination
+amount
+
+per lfo:
+mode - free, trig
+type - sin, tri, square, saw, noise
+polarity - unipolar, bipolar
+shape - linear vs. exp, noise color?
+pulse - stretch middle to front / back
+delay
+fade in
+fade out
+loop count - 0.5, 1, 1.5, 2, ..., inf
+
+per lfo destination:
+destination
+amount

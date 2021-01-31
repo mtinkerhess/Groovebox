@@ -1,0 +1,40 @@
+{
+    "Envelope1": {
+        "Amount": 100,
+        "Attack": 0,
+        "Decay": 8,
+        "Release": 4,
+        "Sustain": 32
+    },
+    "Envelope2": {
+        "Amount": 100,
+        "Attack": 0,
+        "Decay": 8,
+        "Release": 4,
+        "Sustain": 32
+    },
+    "FilterMix": 100,
+    "Length": 10,
+    "Note": 0,
+    "Oscillator1": {
+        "FinePitch": 0,
+        "Level": 100,
+        "OversampleFactor": 64,
+        "Pitch": -9,
+        "Reset": 0,
+        "ResetPhase": 0,
+        "Type": 3
+    },
+    "Oscillator2": {
+        "FinePitch": 0,
+        "Level": 100,
+        "OversampleFactor": 64,
+        "Pitch": -9,
+        "Reset": 0,
+        "ResetPhase": 0,
+        "Type": 3
+    },
+    "Tempo": 128,
+    "Velocity": 100,
+    "Volume": 0
+}

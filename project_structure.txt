@@ -1,0 +1,68 @@
+Project:
+- list of patterns
+
+Pattern:
+- Sound assignments for each track
+- Sequence for each track
+
+Sound:
+- Value for each knob / setting
+
+File structure:
+
+Projects\
+    Project1.json
+    Project2.json
+    Project3.json
+Sounds\
+    Sound1.json
+    Sound2.json
+    Sound3.json
+
+Project1.json:
+
+{
+    "patterns": [
+        {
+            "name": "Intro",
+            "sounds": [
+                "Sound1",
+                "Sound2",
+                ...
+                "Sound8"
+            ],
+            "sequences": [
+                {
+                    "steps": [
+                        {
+                            "on": true,
+                            "locks": {
+                                "Envelope1": {
+                                    "Sustain": 50
+                                },
+                                "Oscillator1": {
+                                    "Pitch": -3
+                                },
+                                ...
+                            }
+                        },
+                        ...
+                    ]
+                },
+                ...
+            ]
+        }
+    ]
+}
+
+Sound1.json:
+{
+    "FilterMix": 100,
+    ...
+    "Oscillator1": {
+        "Type": 3,
+        "Pitch": 0,
+        ...
+    },
+    ...
+}
