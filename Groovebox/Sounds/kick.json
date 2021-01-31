@@ -1,0 +1,260 @@
+{
+    "Modulations": {
+        "Envelope1": {
+            "Delay": {
+                "DryLevel": 0,
+                "Feedback": 0,
+                "HeadDistance": 0,
+                "Pan": 0,
+                "PingPong": 0,
+                "Send": 0,
+                "TapeSpeed": 0,
+                "WetLevel": 0
+            },
+            "Envelope1": {
+                "Amount": 0,
+                "Attack": 0,
+                "Decay": 0,
+                "Release": 0,
+                "Sustain": 0
+            },
+            "Envelope2": {
+                "Amount": 0,
+                "Attack": 0,
+                "Decay": 0,
+                "Release": 0,
+                "Sustain": 0
+            },
+            "Filter": {
+                "Gain": 0,
+                "Pitch": 0,
+                "Q": 0,
+                "Type": 0
+            },
+            "Lfo": {
+                "Amount": 0,
+                "Frequency": 0,
+                "Type": 0
+            },
+            "Oscillator1": {
+                "FinePitch": 0,
+                "Level": 0,
+                "OversampleFactor": 0,
+                "Pan": 0,
+                "Pitch": 0,
+                "Reset": 0,
+                "ResetPhase": 0,
+                "Type": 0
+            },
+            "Oscillator2": {
+                "FinePitch": 0,
+                "Level": 0,
+                "OversampleFactor": 0,
+                "Pan": 0,
+                "Pitch": 0,
+                "Reset": 0,
+                "ResetPhase": 0,
+                "Type": 0
+            },
+            "Synth": {
+                "FilterMix": 0,
+                "Length": 0,
+                "Note": 0,
+                "Velocity": 0,
+                "Volume": 100
+            }
+        },
+        "Envelope2": {
+            "Delay": {
+                "DryLevel": 0,
+                "Feedback": 0,
+                "HeadDistance": 0,
+                "Pan": 0,
+                "PingPong": 0,
+                "Send": 0,
+                "TapeSpeed": 0,
+                "WetLevel": 0
+            },
+            "Envelope1": {
+                "Amount": 0,
+                "Attack": 0,
+                "Decay": 0,
+                "Release": 0,
+                "Sustain": 0
+            },
+            "Envelope2": {
+                "Amount": 0,
+                "Attack": 0,
+                "Decay": 0,
+                "Release": 0,
+                "Sustain": 0
+            },
+            "Filter": {
+                "Gain": 0,
+                "Pitch": 0,
+                "Q": 0,
+                "Type": 0
+            },
+            "Lfo": {
+                "Amount": 0,
+                "Frequency": 0,
+                "Type": 0
+            },
+            "Oscillator1": {
+                "FinePitch": 0,
+                "Level": 0,
+                "OversampleFactor": 0,
+                "Pan": 0,
+                "Pitch": 17,
+                "Reset": 0,
+                "ResetPhase": 0,
+                "Type": 0
+            },
+            "Oscillator2": {
+                "FinePitch": 0,
+                "Level": 0,
+                "OversampleFactor": 0,
+                "Pan": 0,
+                "Pitch": 0,
+                "Reset": 0,
+                "ResetPhase": 0,
+                "Type": 0
+            },
+            "Synth": {
+                "FilterMix": 0,
+                "Length": 0,
+                "Note": 0,
+                "Velocity": 0,
+                "Volume": 0
+            }
+        },
+        "Lfo": {
+            "Delay": {
+                "DryLevel": 0,
+                "Feedback": 0,
+                "HeadDistance": 0,
+                "Pan": 0,
+                "PingPong": 0,
+                "Send": 0,
+                "TapeSpeed": 0,
+                "WetLevel": 0
+            },
+            "Envelope1": {
+                "Amount": 0,
+                "Attack": 0,
+                "Decay": 0,
+                "Release": 0,
+                "Sustain": 0
+            },
+            "Envelope2": {
+                "Amount": 0,
+                "Attack": 0,
+                "Decay": 0,
+                "Release": 0,
+                "Sustain": 0
+            },
+            "Filter": {
+                "Gain": 0,
+                "Pitch": 0,
+                "Q": 0,
+                "Type": 0
+            },
+            "Lfo": {
+                "Amount": 0,
+                "Frequency": 0,
+                "Type": 0
+            },
+            "Oscillator1": {
+                "FinePitch": 0,
+                "Level": 0,
+                "OversampleFactor": 0,
+                "Pan": 0,
+                "Pitch": 0,
+                "Reset": 0,
+                "ResetPhase": 0,
+                "Type": 0
+            },
+            "Oscillator2": {
+                "FinePitch": 0,
+                "Level": 0,
+                "OversampleFactor": 0,
+                "Pan": 0,
+                "Pitch": 0,
+                "Reset": 0,
+                "ResetPhase": 0,
+                "Type": 0
+            },
+            "Synth": {
+                "FilterMix": 0,
+                "Length": 0,
+                "Note": 0,
+                "Velocity": 0,
+                "Volume": 0
+            }
+        }
+    },
+    "Params": {
+        "Delay": {
+            "DryLevel": 100,
+            "Feedback": 0,
+            "HeadDistance": 100,
+            "Pan": 0,
+            "PingPong": 0,
+            "Send": 100,
+            "TapeSpeed": 10,
+            "WetLevel": 0
+        },
+        "Envelope1": {
+            "Amount": 100,
+            "Attack": 0,
+            "Decay": 3,
+            "Release": 13,
+            "Sustain": 61
+        },
+        "Envelope2": {
+            "Amount": 100,
+            "Attack": 0,
+            "Decay": 7,
+            "Release": 4,
+            "Sustain": 0
+        },
+        "Filter": {
+            "Gain": 0,
+            "Pitch": -44,
+            "Q": 55,
+            "Type": 4
+        },
+        "Lfo": {
+            "Amount": 100,
+            "Frequency": 10,
+            "Type": 0
+        },
+        "Oscillator1": {
+            "FinePitch": 0,
+            "Level": 100,
+            "OversampleFactor": 64,
+            "Pan": 0,
+            "Pitch": -36,
+            "Reset": 1,
+            "ResetPhase": 45,
+            "Type": 0
+        },
+        "Oscillator2": {
+            "FinePitch": 0,
+            "Level": 0,
+            "OversampleFactor": 64,
+            "Pan": 0,
+            "Pitch": -24,
+            "Reset": 1,
+            "ResetPhase": 0,
+            "Type": 0
+        },
+        "Synth": {
+            "FilterMix": 100,
+            "Length": 4,
+            "Note": 0,
+            "Velocity": 100,
+            "Volume": 0
+        }
+    }
+}

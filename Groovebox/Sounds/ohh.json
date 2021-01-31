@@ -5,6 +5,8 @@
                 "DryLevel": 0,
                 "Feedback": 0,
                 "HeadDistance": 0,
+                "Pan": 0,
+                "PingPong": 0,
                 "Send": 0,
                 "TapeSpeed": 0,
                 "WetLevel": 0
@@ -58,7 +60,6 @@
                 "FilterMix": 0,
                 "Length": 0,
                 "Note": 0,
-                "Tempo": 0,
                 "Velocity": 0,
                 "Volume": 100
             }
@@ -68,6 +69,8 @@
                 "DryLevel": 0,
                 "Feedback": 0,
                 "HeadDistance": 0,
+                "Pan": 0,
+                "PingPong": 0,
                 "Send": 0,
                 "TapeSpeed": 0,
                 "WetLevel": 0
@@ -121,7 +124,6 @@
                 "FilterMix": 0,
                 "Length": 0,
                 "Note": 0,
-                "Tempo": 0,
                 "Velocity": 0,
                 "Volume": 0
             }
@@ -130,7 +132,9 @@
             "Delay": {
                 "DryLevel": 0,
                 "Feedback": 0,
-                "HeadDistance": 1,
+                "HeadDistance": 0,
+                "Pan": 0,
+                "PingPong": 0,
                 "Send": 0,
                 "TapeSpeed": 0,
                 "WetLevel": 0
@@ -184,7 +188,6 @@
                 "FilterMix": 0,
                 "Length": 0,
                 "Note": 0,
-                "Tempo": 0,
                 "Velocity": 0,
                 "Volume": 0
             }
@@ -192,19 +195,21 @@
     },
     "Params": {
         "Delay": {
-            "DryLevel": 0,
-            "Feedback": 71,
-            "HeadDistance": 24,
+            "DryLevel": 100,
+            "Feedback": 0,
+            "HeadDistance": 100,
+            "Pan": 0,
+            "PingPong": 0,
             "Send": 100,
             "TapeSpeed": 10,
-            "WetLevel": 100
+            "WetLevel": 0
         },
         "Envelope1": {
             "Amount": 100,
-            "Attack": 21,
-            "Decay": 8,
-            "Release": 45,
-            "Sustain": 100
+            "Attack": 0,
+            "Decay": 2,
+            "Release": 10,
+            "Sustain": 13
         },
         "Envelope2": {
             "Amount": 100,
@@ -215,13 +220,13 @@
         },
         "Filter": {
             "Gain": 0,
-            "Pitch": 64,
-            "Q": 50,
-            "Type": 0
+            "Pitch": 49,
+            "Q": 56,
+            "Type": 6
         },
         "Lfo": {
-            "Amount": 3,
-            "Frequency": 65,
+            "Amount": 100,
+            "Frequency": 10,
             "Type": 0
         },
         "Oscillator1": {
@@ -229,10 +234,10 @@
             "Level": 100,
             "OversampleFactor": 64,
             "Pan": 0,
-            "Pitch": 4,
+            "Pitch": -9,
             "Reset": 0,
             "ResetPhase": 0,
-            "Type": 0
+            "Type": 4
         },
         "Oscillator2": {
             "FinePitch": 0,
@@ -246,9 +251,8 @@
         },
         "Synth": {
             "FilterMix": 100,
-            "Length": 52,
+            "Length": 5,
             "Note": 0,
-            "Tempo": 128,
             "Velocity": 100,
             "Volume": 0
         }
