@@ -16,7 +16,7 @@ The app is currently in development and things here might change.
 
 ![Screenshot](Images/Screenshot-1.png)
 
-At the top of the screen are buttons to access the different pages. Each page provides a different set of control dials to modify the current sound.
+At the top of the screen are buttons to access the different pages. Each page provides a different set of control dials to modify the current sound. You can click and drag up and down on a dial to adjust its value.
 
 - Global: Controls shared by all tracks
 - Synth: Controls for note (pitch), velocity (currently unused), step length, filter
