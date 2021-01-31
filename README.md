@@ -18,7 +18,7 @@ The app is currently in development and things here might change.
 
 At the top of the screen are buttons to access the different pages. Each page provides a different set of control dials to modify the current sound. You can click and drag up and down on a dial to adjust its value.
 
-- Global: Controls shared by all tracks
+- Global: Controls shared by all tracks, right now just tempo.
 - Synth: Controls for note (pitch), velocity (currently unused), step length, filter
   mix, and volume (by default modulated by envelope 1).
 - Oscs: Controls for two oscillators, like type (waveform), pitch, level, etc.
